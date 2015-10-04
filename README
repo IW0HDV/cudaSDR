@@ -1,0 +1,16 @@
+
+
+How to build on U 14.04
+-----------------------
+
+
+#install Qt5 multimedia development library
+
+sudo apt-get install qtmultimedia5-dev
+
+# if the linker doesn't find the library 
+# -lQt5Multimedia
+#
+sudo rm /usr/lib/x86_64-linux-gnu/libQt5Multimedia.so
+sudo ln -s /usr/lib/x86_64-linux-gnu/libQt5Multimedia.so.5 /usr/lib/x86_64-linux-gnu/libQt5Multimedia.so
+
